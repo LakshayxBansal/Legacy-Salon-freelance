@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
@@ -12,7 +12,7 @@ import { Calendar } from "@/components/ui/calendar"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { Badge } from "@/components/ui/badge"
 import { Alert, AlertDescription } from "@/components/ui/alert"
-import { CalendarIcon, Clock, User, Phone, MessageSquare, X, Plus, Trash2, CheckCircle, AlertCircle, Tag, Check } from 'lucide-react'
+import { CalendarIcon, Clock, X, Trash2, CheckCircle, AlertCircle, Tag, Check } from 'lucide-react'
 import { format } from "date-fns"
 
 interface Service {
@@ -240,7 +240,7 @@ export default function BookingForm({ services, onClose }: BookingFormProps) {
             <Alert>
               <AlertCircle className="h-4 w-4" />
               <AlertDescription>
-                We'll call you at {customerPhone} to confirm your appointment. 
+                We&apos;ll call you at {customerPhone} to confirm your appointment. 
                 Please arrive 10 minutes early.
               </AlertDescription>
             </Alert>

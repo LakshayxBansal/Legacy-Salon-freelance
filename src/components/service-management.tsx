@@ -189,7 +189,7 @@ export default function ServiceManagement({ services, setServices, onClose }: Se
               </div>
               <div className="grid gap-2">
                 <Label htmlFor="category">Category</Label>
-                <Select value={newService.category} onValueChange={(value: any) => setNewService({...newService, category: value})}>
+                <Select value={newService.category} onValueChange={(value: "hair" | "beauty" | "makeup" | "nails") => setNewService({...newService, category: value})}>
                   <SelectTrigger>
                     <SelectValue placeholder="Select category" />
                   </SelectTrigger>
@@ -289,7 +289,7 @@ function EditServiceForm({ service, onSave, onCancel }: {
       </div>
       <div className="grid gap-2">
         <Label htmlFor="edit-category">Category</Label>
-        <Select value={editedService.category} onValueChange={(value: any) => setEditedService({...editedService, category: value})}>
+        <Select value={editedService.category} onValueChange={(value: "hair" | "beauty" | "makeup" | "nails") => setEditedService({...editedService, category: value})}>
           <SelectTrigger>
             <SelectValue />
           </SelectTrigger>
