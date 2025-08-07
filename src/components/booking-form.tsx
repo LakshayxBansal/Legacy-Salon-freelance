@@ -275,7 +275,7 @@ export default function BookingForm({ services, onClose }: BookingFormProps) {
             <div className="space-y-2">
               <Select value={currentServiceSelection} onValueChange={setCurrentServiceSelection}>
                 <SelectTrigger>
-                  <SelectValue placeholder="Choose a service (auto-adds when selected)" />
+                  <SelectValue placeholder="Choose a service" />
                 </SelectTrigger>
                 <SelectContent>
                   {availableServices.map((service) => (
