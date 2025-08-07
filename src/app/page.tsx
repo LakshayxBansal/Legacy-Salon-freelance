@@ -304,17 +304,18 @@ export default function LegacySalonWebsite() {
                 src="/logo.png"
                 alt="The Legacy Salon Logo"
                 fill
-                className="object-contain filter brightness-0 invert"
+                //className="object-contain filter brightness-0 invert"
+                className="border border-b-amber-500"
               />
             </div>
             <h4 className="text-lg sm:text-xl font-bold">The Legacy Salon</h4>
           </div>
-          <p className="text-gray-400 mb-4 text-sm sm:text-base">Professional Hair, Beauty & Makeup Services</p>
+          <p className="text-gray-400 mb-4 text-sm sm:text-base">Professional Hair, Beauty, Nail & Makeup Services</p>
           <div className="flex justify-center items-center space-x-1 mb-4">
             {[1, 2, 3, 4, 5].map((star) => (
               <Star key={star} className="w-3 h-3 sm:w-4 sm:h-4 fill-yellow-400 text-yellow-400" />
             ))}
-            <span className="ml-2 text-gray-400 text-sm">4.9/5 Customer Rating</span>
+            <span className="ml-2 text-gray-400 text-sm">4.3/5 Customer Rating</span>
           </div>
           <Separator className="my-4 bg-gray-700" />
           <p className="text-gray-500 text-sm">© 2024 The Legacy Salon. All rights reserved.</p>
